@@ -1,0 +1,40 @@
+mysql> desc course;
++-------------+----------+------+-----+---------+-------+
+| Field       | Type     | Null | Key | Default | Extra |
++-------------+----------+------+-----+---------+-------+
+| faculty     | char(10) | YES  |     | NULL    |       |
+| subjectcode | int(6)   | YES  |     | NULL    |       |
+| subjectname | char(10) | YES  |     | NULL    |       |
+| nostds      | int(45)  | YES  |     | NULL    |       |
++-------------+----------+------+-----+---------+-------+
+4 rows in set (0.03 sec)
+
+mysql> alter table course add primary key(faculty);
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc course;
++-------------+----------+------+-----+---------+-------+
+| Field       | Type     | Null | Key | Default | Extra |
++-------------+----------+------+-----+---------+-------+
+| faculty     | char(10) | NO   | PRI |         |       |
+| subjectcode | int(6)   | YES  |     | NULL    |       |
+| subjectname | char(10) | YES  |     | NULL    |       |
+| nostds      | int(45)  | YES  |     | NULL    |       |
++-------------+----------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> alter table course add unique key(subjectcode);
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc course;
++-------------+----------+------+-----+---------+-------+
+| Field       | Type     | Null | Key | Default | Extra |
++-------------+----------+------+-----+---------+-------+
+| faculty     | char(10) | NO   | PRI |         |       |
+| subjectcode | int(6)   | YES  | UNI | NULL    |       |
+| subjectname | char(10) | YES  |     | NULL    |       |
+| nostds      | int(45)  | YES  |     | NULL    |       |
++-------------+----------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
