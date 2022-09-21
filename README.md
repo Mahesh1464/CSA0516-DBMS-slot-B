@@ -4,4 +4,4 @@ DDL commands -(Create, Alter, Drop)-(https://github.com/Mahesh1464/CSA0516-DBMS-
 ## EXPERIMENT 2:
 DDL commands with constraints -(primary,foreign,unique,check)-(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%202.txt)
 ## EXPERIMENT -3:
-DML commands - (insert,select) -()
+DML commands - (insert,select) -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%203.txt)
