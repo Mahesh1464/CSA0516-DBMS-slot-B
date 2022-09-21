@@ -1,0 +1,61 @@
+Enter password: ******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 7
+Server version: 5.5.62 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use mahesh;
+Database changed
+mysql> show tables;
++------------------+
+| Tables_in_mahesh |
++------------------+
+| course           |
+| library          |
+| student          |
++------------------+
+3 rows in set (0.00 sec)
+
+mysql> select * from library;
++-------+------+-------+------+-------+------+
+| regno | Name | books | phy  | chem  | dbms |
++-------+------+-------+------+-------+------+
+|    14 | modi | leo   | ravi | muthu | NULL |
++-------+------+-------+------+-------+------+
+1 row in set (0.01 sec)
+
+mysql> alter table library add python;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> alter table library add python char(10);
+Query OK, 1 row affected (0.04 sec)
+Records: 1  Duplicates: 0  Warnings: 0
+
+mysql> desc library;
++--------+----------+------+-----+---------+-------+
+| Field  | Type     | Null | Key | Default | Extra |
++--------+----------+------+-----+---------+-------+
+| regno  | int(3)   | NO   | PRI | 0       |       |
+| Name   | char(15) | YES  |     | NULL    |       |
+| books  | char(5)  | YES  |     | NULL    |       |
+| phy    | char(10) | YES  |     | NULL    |       |
+| chem   | char(10) | YES  |     | NULL    |       |
+| dbms   | char(10) | YES  | UNI | NULL    |       |
+| python | char(10) | YES  |     | NULL    |       |
++--------+----------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> drop table library;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> desc library;
+ERROR 1146 (42S02): Table 'mahesh.library' doesn't exist
+mysql> desc library;
+ERROR 1146 (42S02): Table 'mahesh.library' doesn't exist
+mysql>
