@@ -18,6 +18,6 @@ case scenario sql queries implementation for book publishing -(https://github.co
 ## EXPERIMENT 8:
 subquery & correlated query -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%208.txt)
 ## EXPERIMENT 9:
-joins - equijoin,innerjoin,outerjoin -()
+joins - equijoin,innerjoin,outerjoin -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%209.txt)
 ## EXPERIMENT 10:
 view,index,sequence -()
