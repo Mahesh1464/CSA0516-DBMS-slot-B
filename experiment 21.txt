@@ -1,0 +1,26 @@
+mysql> create table department(dname char(15),dnumber int(20),mgrssn int(15),mgrstartdate date);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc department;
++--------------+----------+------+-----+---------+-------+
+| Field        | Type     | Null | Key | Default | Extra |
++--------------+----------+------+-----+---------+-------+
+| dname        | char(15) | YES  |     | NULL    |       |
+| dnumber      | int(20)  | YES  |     | NULL    |       |
+| mgrssn       | int(15)  | YES  |     | NULL    |       |
+| mgrstartdate | date     | YES  |     | NULL    |       |
++--------------+----------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+mysql> insert into department values('ml',254,78546,'24-09-02'),('dl',451,21356,'20-05-06'),('arvr',362,45817,'31-05-03');
+Query OK, 3 rows affected (0.00 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> desc department;
++-------+---------+--------+--------------+
+| dname | dnumber | mgrssn | mgrstartdate |
++-------+---------+--------+--------------+
+| ml    |     254 |  78546 | 2024-09-02   |
+| dl    |     451 |  21356 | 2020-05-06   |
+| arvr  |     362 |  45817 | 2031-05-03   |
++-------+---------+--------+--------------+
+3 rows in set (0.00 sec)
