@@ -1,0 +1,69 @@
+mysql> select* from family;
++-----------+------+---------+--------------+----------+
+| names     | age  | gradute | relationship | job      |
++-----------+------+---------+--------------+----------+
+| govardhan |   25 | degree  | elder        | studying |
+| lalitha   |   45 | house   | mother       | NULL     |
+| mahesh    |   18 | BE      | brother      | studying |
+| divya     |   24 | mca     | sisinlaw     | job      |
++-----------+------+---------+--------------+----------+
+4 rows in set (0.00 sec)
+
+mysql> select * from family
+    -> order by age;
++-----------+------+---------+--------------+----------+
+| names     | age  | gradute | relationship | job      |
++-----------+------+---------+--------------+----------+
+| mahesh    |   18 | BE      | brother      | studying |
+| divya     |   24 | mca     | sisinlaw     | job      |
+| govardhan |   25 | degree  | elder        | studying |
+| lalitha   |   45 | house   | mother       | NULL     |
++-----------+------+---------+--------------+----------+
+4 rows in set (0.00 sec)
+
+mysql> select * from family
+    -> order by graduate;
+ERROR 1054 (42S22): Unknown column 'graduate' in 'order clause'
+mysql> select * from family
+    -> order by gradute;
++-----------+------+---------+--------------+----------+
+| names     | age  | gradute | relationship | job      |
++-----------+------+---------+--------------+----------+
+| mahesh    |   18 | BE      | brother      | studying |
+| govardhan |   25 | degree  | elder        | studying |
+| lalitha   |   45 | house   | mother       | NULL     |
+| divya     |   24 | mca     | sisinlaw     | job      |
++-----------+------+---------+--------------+----------+
+4 rows in set (0.00 sec)
+
+mysql> select * from family
+    -> group by relationship;
++-----------+------+---------+--------------+----------+
+| names     | age  | gradute | relationship | job      |
++-----------+------+---------+--------------+----------+
+| mahesh    |   18 | BE      | brother      | studying |
+| govardhan |   25 | degree  | elder        | studying |
+| lalitha   |   45 | house   | mother       | NULL     |
+| divya     |   24 | mca     | sisinlaw     | job      |
++-----------+------+---------+--------------+----------+
+4 rows in set (0.00 sec)
+
+mysql> select * from family
+    -> group by age
+    -> having age>=25;
++-----------+------+---------+--------------+----------+
+| names     | age  | gradute | relationship | job      |
++-----------+------+---------+--------------+----------+
+| govardhan |   25 | degree  | elder        | studying |
+| lalitha   |   45 | house   | mother       | NULL     |
++-----------+------+---------+--------------+----------+
+2 rows in set (0.00 sec)
+
+mysql> select * from family
+    -> having age=18;
++--------+------+---------+--------------+----------+
+| names  | age  | gradute | relationship | job      |
++--------+------+---------+--------------+----------+
+| mahesh |   18 | BE      | brother      | studying |
++--------+------+---------+--------------+----------+
+1 row in set (0.00 sec)
