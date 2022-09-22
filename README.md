@@ -8,4 +8,4 @@ DML commands - (insert,select) -(https://github.com/Mahesh1464/CSA0516-DBMS-slot
 ## EXPERIMENT 4:
 DML commands -(update,delete)-(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%204.txt)
 ## EXPERIMENT 5:
-select with various clause -(where,pattern matching) -()
+select with various clause -(where,pattern matching) -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%205.txt)
