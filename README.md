@@ -20,4 +20,4 @@ subquery & correlated query -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/
 ## EXPERIMENT 9:
 joins - equijoin,innerjoin,outerjoin -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%209.txt)
 ## EXPERIMENT 10:
-view,index,sequence -()
+view,index,sequence -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2010.txt)
