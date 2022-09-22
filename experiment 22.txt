@@ -1,0 +1,75 @@
+mysql> create table bookpublisher(bookid int(10),bookname char(15),author char(15),customer char(15));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> select * from table bookpublisher;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'table bookpublisher' at line 1
+mysql> desc bookpublisher;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| bookid   | int(10)  | YES  |     | NULL    |       |
+| bookname | char(15) | YES  |     | NULL    |       |
+| author   | char(15) | YES  |     | NULL    |       |
+| customer | char(15) | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+4 rows in set (0.03 sec)
+
+mysql> insert into bookpublisher values(2453,'life','gdr','maanas'),(9854,'believe','alice','divya'),(5612,'wings','huxley','lalitha'),(6943,'mice','john','mahesh');
+Query OK, 4 rows affected (0.01 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> select * from bookpublisher;
++--------+----------+--------+----------+
+| bookid | bookname | author | customer |
++--------+----------+--------+----------+
+|   2453 | life     | gdr    | maanas   |
+|   9854 | believe  | alice  | divya    |
+|   5612 | wings    | huxley | lalitha  |
+|   6943 | mice     | john   | mahesh   |
++--------+----------+--------+----------+
+4 rows in set (0.00 sec)
+
+mysql> alter table bookpublisher add(price int(10));
+Query OK, 4 rows affected (0.04 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> select * from bookpublisher;
++--------+----------+--------+----------+-------+
+| bookid | bookname | author | customer | price |
++--------+----------+--------+----------+-------+
+|   2453 | life     | gdr    | maanas   |  NULL |
+|   9854 | believe  | alice  | divya    |  NULL |
+|   5612 | wings    | huxley | lalitha  |  NULL |
+|   6943 | mice     | john   | mahesh   |  NULL |
++--------+----------+--------+----------+-------+
+4 rows in set (0.00 sec)
+
+mysql> update bookpublisher set price='159' where author=gdr;
+ERROR 1054 (42S22): Unknown column 'gdr' in 'where clause'
+mysql>  update bookpublisher set price=159 where author='gdr';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from bookpublisher;
++--------+----------+--------+----------+-------+
+| bookid | bookname | author | customer | price |
++--------+----------+--------+----------+-------+
+|   2453 | life     | gdr    | maanas   |   159 |
+|   9854 | believe  | alice  | divya    |  NULL |
+|   5612 | wings    | huxley | lalitha  |  NULL |
+|   6943 | mice     | john   | mahesh   |  NULL |
++--------+----------+--------+----------+-------+
+4 rows in set (0.00 sec)
+
+mysql> delete from bookpublisher where customer='lalitha';
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from bookpublisher;
++--------+----------+--------+----------+-------+
+| bookid | bookname | author | customer | price |
++--------+----------+--------+----------+-------+
+|   2453 | life     | gdr    | maanas   |   159 |
+|   9854 | believe  | alice  | divya    |  NULL |
+|   6943 | mice     | john   | mahesh   |  NULL |
++--------+----------+--------+----------+-------+
+3 rows in set (0.00 sec)
