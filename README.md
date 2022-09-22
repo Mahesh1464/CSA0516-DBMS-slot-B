@@ -7,3 +7,5 @@ DDL commands with constraints -(primary,foreign,unique,check)-(https://github.co
 DML commands - (insert,select) -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%203.txt)
 ## EXPERIMENT 4:
 DML commands -(update,delete)-(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%204.txt)
+## EXPERIMENT 5:
+select with various clause -(where,pattern matching) -()
