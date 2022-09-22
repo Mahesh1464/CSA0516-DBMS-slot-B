@@ -1,0 +1,32 @@
+mysql> select * from family;
++-----------+------+---------+--------------+----------+
+| names     | age  | gradute | relationship | job      |
++-----------+------+---------+--------------+----------+
+| govardhan |   25 | degree  | elder        | studying |
+| lalitha   |   45 | house   | mother       | NULL     |
+| mahesh    |   18 | BE      | brother      | studying |
+| divya     |   24 | mca     | sisinlaw     | job      |
++-----------+------+---------+--------------+----------+
+4 rows in set (0.00 sec)
+
+mysql> select * from family
+    -> where column=relationship;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'column=relationship' at line 2
+mysql> select relationship from family;
++--------------+
+| relationship |
++--------------+
+| elder        |
+| mother       |
+| brother      |
+| sisinlaw     |
++--------------+
+4 rows in set (0.00 sec)
+
+mysql> select * from family where age=25;
++-----------+------+---------+--------------+----------+
+| names     | age  | gradute | relationship | job      |
++-----------+------+---------+--------------+----------+
+| govardhan |   25 | degree  | elder        | studying |
++-----------+------+---------+--------------+----------+
+1 row in set (0.00 sec)
