@@ -13,3 +13,5 @@ select with various clause -(where,pattern matching) -(https://github.com/Mahesh
 select with various clause -(between,in,aggregate function) -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%206.txt)
 ## EXPERIMENT 7:
 select with various clause -(order,group by,having) -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%207.txt)
+## EXPERIMENT 22:
+case scenario sql queries implementation for book publishing -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2022.txt)
