@@ -21,3 +21,7 @@ subquery & correlated query -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/
 joins - equijoin,innerjoin,outerjoin -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%209.txt)
 ## EXPERIMENT 10:
 view,index,sequence -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2010.txt)
+## EXPERIMENT 12:
+simple programming exercise using repeat,while -()
+## EXPERIMENT 13:
+tcl commands -commit,rollback,savepoint -()
