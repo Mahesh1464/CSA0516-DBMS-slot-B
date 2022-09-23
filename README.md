@@ -28,13 +28,13 @@ simple programming exercise using repeat,while -(https://github.com/Mahesh1464/C
 ## EXPERIMENT 13:
 tcl commands -commit,rollback,savepoint -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2013.txt)
 ## EXPERIMENT 14:
-DCL commands -(GRANT,REVOKE) -()
+DCL commands -(GRANT,REVOKE) -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2014.txt)
 ## EXPERIMENT 15:
-high level programming extension - procedures ()
+high level programming extension - procedures (https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2015.txt)
 ## EXPERIMENT 16:
 high level programming extensions - functions ()
 ## EXPERIMENT 17:
-high level programming extensions - cursors ()
+high level programming extensions - cursors (https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2017.txt)
 ## EXPERIMENT 18:
 high level programming extensions -trigger ()
 ## EXPERIMENT 19:
