@@ -36,16 +36,16 @@ high level programming extensions - functions ()
 ## EXPERIMENT 17:
 high level programming extensions - cursors (https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2017.txt)
 ## EXPERIMENT 18:
-high level programming extensions -trigger ()
+high level programming extensions -trigger (https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2018.txt)
 ## EXPERIMENT 19:
 database connectivity - using php & mysql ()
 ## EXPERIMENT 20:
-database connectivity - using java & mysql ()
+database connectivity - using java & mysql (https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2020.txt)
 ## EXPERIMENT 21:
-database connectivity - using java & Ms Access()
+database connectivity - using java & Ms Access(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2021.txt)
 ## EXPERIMENT 23:
-case scenario SQL queries implementation for general hospital - ()
+case scenario SQL queries implementation for general hospital - (https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2023.txt)
 ## EXPERIMENT 24:
-case sceanrio SQL queries implementation for rental company -()
+case sceanrio SQL queries implementation for rental company -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2024.txt)
 ## EXPERIMENT 25:
-case scenario SQL queries implementation for student progrees monitoring system -() 
+case scenario SQL queries implementation for student progrees monitoring system -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2025.txt) 
