@@ -21,7 +21,31 @@ subquery & correlated query -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/
 joins - equijoin,innerjoin,outerjoin -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%209.txt)
 ## EXPERIMENT 10:
 view,index,sequence -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2010.txt)
+## EXPERIMENT 11:
+simple programming exercises using CASE,IF,ITERATIVE,LEAVE,LOOP -()
 ## EXPERIMENT 12:
 simple programming exercise using repeat,while -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2012.txt)
 ## EXPERIMENT 13:
 tcl commands -commit,rollback,savepoint -(https://github.com/Mahesh1464/CSA0516-DBMS-slot-B/blob/main/experiment%2013.txt)
+## EXPERIMENT 14:
+DCL commands -(GRANT,REVOKE) -()
+## EXPERIMENT 15:
+high level programming extension - procedures ()
+## EXPERIMENT 16:
+high level programming extensions - functions ()
+## EXPERIMENT 17:
+high level programming extensions - cursors ()
+## EXPERIMENT 18:
+high level programming extensions -trigger ()
+## EXPERIMENT 19:
+database connectivity - using php & mysql ()
+## EXPERIMENT 20:
+database connectivity - using java & mysql ()
+## EXPERIMENT 21:
+database connectivity - using java & Ms Access()
+## EXPERIMENT 23:
+case scenario SQL queries implementation for general hospital - ()
+## EXPERIMENT 24:
+case sceanrio SQL queries implementation for rental company -()
+## EXPERIMENT 25:
+case scenario SQL queries implementation for student progrees monitoring system -() 
